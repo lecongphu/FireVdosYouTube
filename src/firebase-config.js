@@ -3,12 +3,12 @@ import { GoogleAuthProvider, getAuth } from "firebase/auth";
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyB1WpSkU3S6zt1YXraSfmVB4EMJJ0Nh2Uo",
-  authDomain: "fire-vdos.firebaseapp.com",
-  projectId: "fire-vdos",
-  storageBucket: "fire-vdos.appspot.com",
-  messagingSenderId: "312708286044",
-  appId: "1:312708286044:web:3b20a7d328b45071fd4899"
+  apiKey: "AIzaSyC6_Swy4LW_YkjxB7964NYRneopRncmAjU",
+  authDomain: "schedulesfinder.firebaseapp.com",
+  projectId: "schedulesfinder",
+  storageBucket: "schedulesfinder.appspot.com",
+  messagingSenderId: "1047710671835",
+  appId: "1:1047710671835:web:0fa413753343d77522fdfe"
 };
 
 
