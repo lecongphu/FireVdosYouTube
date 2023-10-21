@@ -4,7 +4,7 @@ import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
   apiKey: "AIzaSyC6_Swy4LW_YkjxB7964NYRneopRncmAjU",
-  authDomain: "schedulesfinder.firebaseapp.com",
+  authDomain: "j2video.netlify.app",
   projectId: "schedulesfinder",
   storageBucket: "schedulesfinder.appspot.com",
   messagingSenderId: "1047710671835",
