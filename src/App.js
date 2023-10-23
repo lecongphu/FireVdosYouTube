@@ -11,6 +11,7 @@ import Channel from './pages/Channel';
 import Subscriptions from './pages/Subscriptions';
 import { ToastContainer, toast } from 'react-toastify';
 import History from './pages/History';
+import Donate from './pages/Donate';
 import 'react-toastify/dist/ReactToastify.css';
 // import { ReactQueryDevtools } from "react-query/devtools"
 import { CurrentUserContext } from './context/CurrentUserContext';
@@ -45,6 +46,7 @@ const App = () => {
               <Route path="/liked" element={<ProtectedRoute><LikedVideos /></ProtectedRoute>} />
               <Route path="/subscriptions" element={<ProtectedRoute><Subscriptions /></ProtectedRoute>} />
               <Route path="/history" element={<ProtectedRoute><History /></ProtectedRoute>} />
+              <Route path="/donate" element={<Donate />} />
               <Route path="/search/:searchValue" element={<SearchPage />} />
               <Route path="/watch/:videoID" element={<Watch />} />
               <Route path="/channel/:channelID" element={<Channel />} />
