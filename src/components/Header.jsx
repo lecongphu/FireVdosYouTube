@@ -58,9 +58,9 @@ const Header = ({ setShowNav }) => {
                     <AiOutlineMenu className='text-2xl sm:hidden' />
                 </button>
 
-                <Link to="/" className='d-flex gap-2 w-max relative' title="FireVdos" >
+                <Link to="/" className='d-flex gap-2 w-max relative' title="J2Video" >
                     <img className='w-9 sm:w-10' src={logo} alt="" />
-                    <span className='hidden font-semibold sm:block sm:text-2xl'>FireVdos</span>
+                    <span className='hidden font-semibold sm:block sm:text-2xl'>J2Video</span>
                     <span className='absolute text-xs text-dark-gray dark:text-light-gray font-medium left-[110%] sm:left-[105%] bottom-[55%]' >{countryCode}</span>
                 </Link>
             </div>
