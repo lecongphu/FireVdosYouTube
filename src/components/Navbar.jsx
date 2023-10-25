@@ -3,7 +3,7 @@ import { AiFillHome } from "react-icons/ai";
 import { BiSolidLike } from 'react-icons/bi'
 import { ImSwitch, ImUsers } from 'react-icons/im';
 import { MdHistory } from "react-icons/md";
-import { FaGratipay } from "react-icons/fa";
+// import { FaGratipay } from "react-icons/fa";
 import { FaFire } from "react-icons/fa";
 import ToggleMode from './ToggleMode';
 import { Link } from 'react-router-dom';
