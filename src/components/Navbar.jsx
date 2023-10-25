@@ -68,10 +68,10 @@ const Navbar = ({ showNav, setShowNav }) => {
                         </button>
 
                 }
-                <Link to='/donate' className='nav-link' title='MoMo'>
+                {/* <Link to='/donate' className='nav-link' title='MoMo'>
                     <FaGratipay className='text-xl md:text-lg 2xl:text-2xl' />
                     <span className='font-light text-base sm:text-xs' >MoMo</span>
-                </Link>
+                </Link> */}
                 {/* <a href='https://www.ayushverma.live/' rel="noreferrer" target='_blank' className='nav-link' title='Momo'>
                     <BiCodeAlt className='text-2xl md:text-lg 2xl:text-2xl' />
                     <span className='font-light text-base sm:text-xs' >Ayush</span>
