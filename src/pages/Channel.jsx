@@ -44,11 +44,11 @@ const Channel = () => {
                         data?.data && !isLoading ? (
                             data?.data?.map((ele, index) => {
 
-                                const { videoId, title, publishedTimeText, viewCount, thumbnail, lengthText } = ele;
+                                const { videoId, title, publishedTimeText, viewCount, thumbnail, lengthText, type } = ele;
 
                                 if (thumbnail) {
                                     return (
-                                        <ChannelVdoCard key={`${videoId}-${index}`} videoId={videoId} title={title} time={publishedTimeText} views={viewCount} thumbnail={thumbnail} lengthText={lengthText}
+                                        <ChannelVdoCard key={`${videoId}-${index}`} videoId={videoId} title={title} time={publishedTimeText} views={viewCount} thumbnail={thumbnail} lengthText={lengthText} type={type}
                                         />
                                     );
                                 }

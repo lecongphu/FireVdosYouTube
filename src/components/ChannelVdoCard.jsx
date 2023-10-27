@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-const ChannelVdoCard = ({ videoId, title, time, views, thumbnail, richThumbnail, lengthText }) => {
+const ChannelVdoCard = ({ videoId, title, time, views, thumbnail, richThumbnail, lengthText, type }) => {
 
     const navigate = useNavigate();
     const [hoverPlay, setHoverPlay] = useState(false);

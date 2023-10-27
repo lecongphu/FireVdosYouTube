@@ -7,7 +7,7 @@ const DownloadBtn = ({ videoId }) => {
 
     const options = {
         headers: {
-            'X-RapidAPI-Key': 'fa9a9e1cefmshdc5532c189e8abap157f45jsn52a6d3895f74',
+            'X-RapidAPI-Key': process.env.REACT_APP_API_KEY,
             'X-RapidAPI-Host': 'youtube-mp36.p.rapidapi.com'
         }
     };
