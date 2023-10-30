@@ -2,7 +2,7 @@ import React from 'react';
 
 const Slider = ({ category, updateCategory }) => {
 
-    const categoriesList = ["Music", "Gaming", "Travel", "Beauty", "Cooking", "Fitness", "Technology", "Comedy", "Fashion", "Education", "Vlogs", "Sports", "DIY", "News", "Movies", "Animation", "Science", "Art", "Motivation", "Entertainment"];
+    const categoriesList = ["detuquy", "thapthiennghiep", "dulich", "theduc", "congnghe", "haikich", "thoitrang", "giaoduc", "vlogs", "thethao", "lamtucong", "tintuc", "hoathinh", "khoahoc", "nghethuat", "dongvien", "giaitri"];
 
 
     // Function to update the category value
