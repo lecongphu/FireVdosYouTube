@@ -20,7 +20,7 @@ const Home = () => {
         // if category is selected then fetch data related to category
         if (category) {
             const c = category[0].toLowerCase() + category.slice(1, category.length)
-            const apiData = await fetchFromAPI(`hashtag?tag=${c}&geo=${countryCode || "VN"}&sort_by=date`)
+            const apiData = await fetchFromAPI(`hashtag?tag=${c}&geo=${countryCode || "VN"}&lang=vi&sort_by=date`)
             // console.log(apiData.data)
             setVideos(apiData.data)
         }
