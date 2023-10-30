@@ -12,17 +12,7 @@ const Watch = () => {
 
     const getDataFromApi = async () => {
         const apiData = await fetchFromAPI(`related?id=${videoID}&geo=${countryCode}`);
-        const { adaptiveFormats } = await fetchFromAPI(`dl?id=${videoID}`);
-        const videosData = [];
-        const audioData = adaptiveFormats.filter((elem) => elem.mimeType.includes("audio")).sort((a, b) => -a.bitrate + b.bitrate)[0];
-        const videoFormats = adaptiveFormats.filter((elem) => elem.mimeType.includes(`mp4; codecs="avc`) && elem.height >= 360).sort((a, b) => -a.bitrate + b.bitrate);
-        videosData.push(...videoFormats);
-        videosData.push(audioData);
-        return {
-            relatedData: apiData,
-            audioData: audioData,
-            videosData: videosData,
-        };
+        return apiData;
     };
 
     const { isLoading, data } = useQuery(videoID, getDataFromApi, { cacheTime: 1800000, staleTime: 1800000 });
@@ -30,8 +20,8 @@ const Watch = () => {
     return (
         <>
             <div className="lg:flex w-full max-w-full max-h-full overflow-auto scrollbar-hide md:scrollbar-default">
-                <VideoArea loading={isLoading} videoData={data?.relatedData?.meta} nextVideoID={data?.relatedData?.data[0]?.videoId} audioData={data?.audioData} videosData={data?.videosData}/>
-                <RelatedVdos loading={isLoading} relatedVdos={data?.relatedData?.data} />
+                <VideoArea loading={isLoading} videoData={data?.meta} nextVideoID={data?.data[0]?.videoId} />
+                <RelatedVdos loading={isLoading} relatedVdos={data?.data} />
             </div>
         </>
     );

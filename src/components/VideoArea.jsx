@@ -12,7 +12,7 @@ import ShareModal from './ShareModal';
 import ReactPlayer from 'react-player';
 import { CurrentUserContext } from '../context/CurrentUserContext';
 
-const VideoArea = ({ loading, videoData, nextVideoID, audioData, videosData }) => {
+const VideoArea = ({ loading, videoData, nextVideoID }) => {
 
     const [showMore, setShowMore] = useState(false);
     const { currentUser, currentUserData } = useContext(CurrentUserContext);
@@ -168,7 +168,7 @@ const VideoArea = ({ loading, videoData, nextVideoID, audioData, videosData }) =
 
 
                                     {/* Download button */}
-                                    <DownloadBtn videosData={videosData} />
+                                    <DownloadBtn videoId={videoData?.videoId} />
                                 </div>
 
                             </div>
