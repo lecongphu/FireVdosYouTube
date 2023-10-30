@@ -8,7 +8,7 @@ export const CountryCodeProvider = ({ children }) => {
   useEffect(() => {
     const getLocation = async (latitude, longitude) => {
       try {
-        const res = await fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`);
+        const res = await fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=vi`);
         const location = await res.json();
         setCountryCode(location.countryCode);
       } catch (error) {

@@ -58,7 +58,7 @@ const App = () => {
 
         </main>
 
-        {/* <ReactQueryDevtools /> */}
+        {/* { <ReactQueryDevtools /> } */}
       </div>
     </BrowserRouter>
   );
