@@ -12,7 +12,7 @@ const SearchPage = () => {
     const array = Array(12).fill(0);
 
     const getDataFromApi = async () => {
-        const { data } = await fetchFromAPI(`search?query=${searchValue}&geo=${countryCode}`);
+        const { data } = await fetchFromAPI(`search?query=${searchValue}&geo=${countryCode || "VN"}&lang=vi`);
         return data;
     }
     
@@ -22,7 +22,7 @@ const SearchPage = () => {
         <>
             <div className="w-full max-w-full max-h-full overflow-auto scrollbar-hide md:scrollbar-default">
                 <h2 className="dark:text-white text-black m-4 text-2xl md:text-3xl">
-                    Search result for <span className="text-red-600">{searchValue}</span>
+                    Search result for <span className="text-blue-600">{searchValue}</span>
                 </h2>
                 <div className="dark:bg-black bg-white p-1.5 md:p-4 d-flex flex-col gap-6">
                     {

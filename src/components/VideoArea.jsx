@@ -102,6 +102,11 @@ const VideoArea = ({ loading, videoData, nextVideoID }) => {
         }
     }
 
+    const handleVideoError = (e) => {
+        console.error('Lỗi phát video:', e);
+        // Thêm xử lý lỗi ở đây, ví dụ: hiển thị thông báo lỗi cho người dùng
+      };
+
     const handleAutoPlay = () => {
         setIsAutoPlay(!isAutoPlay);
     };
@@ -116,7 +121,7 @@ const VideoArea = ({ loading, videoData, nextVideoID }) => {
 
                             {/* Youtube iframe */}
                             <div className="w-full h-64 sm:h-[45vh] md:h-[55vh] xl:h-[75vh] mb-3">
-                                <ReactPlayer url={`https://www.youtube.com/watch?v=${videoData?.videoId}`} width="100%" height="100%" controls={true} playing={true} pip={true} onEnded={playNextVideo} />
+                                <ReactPlayer url={`https://www.youtube.com/watch?v=${videoData?.videoId}`} width="100%" height="100%" controls={true} playing={true} pip={true} onEnded={playNextVideo} onError={handleVideoError}/>
                             </div>
 
                             {/* title */}
